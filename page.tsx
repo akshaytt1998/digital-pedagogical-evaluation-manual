@@ -37,7 +37,7 @@ export default function Home() {
   }, [showRolePopup, showInstructionsPopup]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-800">
       <Head>
         <title>Digital Pedagogical Evaluation Manual for MOOC</title>
         <meta
