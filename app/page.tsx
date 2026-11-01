@@ -37,20 +37,23 @@ export default function Home() {
   }, [showRolePopup, showInstructionsPopup]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
+   <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-800">
       <Head>
         <title>Digital Pedagogical Evaluation Manual for MOOC</title>
         <meta
           name="description"
           content="Explore the Digital Pedagogical Evaluation Manual for Massive Open Online Courses (MOOCs)."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"  
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/favicon.ico`}
+        />
       </Head>
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/mooc-background.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/mooc-background.jpg`}
           alt="MOOC Background"
           className="w-full h-full object-cover filter blur-sm"
         />
