@@ -229,7 +229,7 @@ const Questionnaire = () => {
     <div
       className="min-h-screen bg-gray-100 py-8 px-4 sm:px-6 lg:px-8"
       style={{
-        backgroundImage: "url('/mooc.jpeg')",
+        backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/mooc.jpeg')`,
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
       }}
